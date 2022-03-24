@@ -161,7 +161,7 @@ class Request extends BaseRequest {
     if (value == null) {
       headers.remove('content-type');
     } else {
-      headers['content-type'] = value.toString();
+      headers['content-type'] = value.mimeType;
     }
   }
 
